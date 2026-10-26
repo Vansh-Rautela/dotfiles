@@ -1,0 +1,38 @@
+# Sensitive data -- defensive, in case a future profile/session file ever
+# gets copied in under firefox/ by mistake. This repo only ever intends to
+# hold userChrome/userContent CSS and user.js, never live profile data.
+*.key
+*.pem
+id_rsa
+id_ed25519
+*.env
+.env
+.ssh/
+.gnupg/
+firefox/**/cookies.sqlite*
+firefox/**/formhistory.sqlite*
+firefox/**/places.sqlite*
+firefox/**/favicons.sqlite*
+firefox/**/logins.json
+firefox/**/logins.sqlite*
+firefox/**/key4.db
+firefox/**/cert9.db
+firefox/**/sessionstore*
+firefox/**/cache*
+firefox/**/*Cache*
+firefox/**/storage/
+firefox/**/extensions/
+*.log
+
+# Migration/upgrade cruft that shows up in ~/.config -- never wanted here,
+# even if a future copy pulls in a whole live directory by accident.
+*.bak
+*.bak.*
+*.omarchy-upgrade-*.bak
+*.save
+
+# OS/editor noise
+.DS_Store
+*.swp
+*.swo
+*~

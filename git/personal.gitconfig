@@ -1,0 +1,15 @@
+# Personal layer on top of Omarchy's default ~/.config/git/config (aliases,
+# pull/push/diff/rerere defaults -- all untouched, not duplicated here).
+#
+# install.sh adds an [include] pointing at this file rather than copying it
+# into ~/.config/git/config directly, so Omarchy's own config file is never
+# modified and `omarchy refresh config git/config` stays safe to run.
+[user]
+	name = V4
+	email = vaannsshhh@gmail.com
+[credential "https://github.com"]
+	helper =
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper =
+	helper = !/usr/bin/gh auth git-credential

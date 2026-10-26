@@ -1,0 +1,23 @@
+# Packages confirmed via `pacman -Qm` as actually foreign (true AUR builds,
+# not available through any configured repo including Omarchy's own).
+# Installed with: yay -S --needed $(grep -v '^#' aur.txt | grep -v '^$')
+# (or paru, or manual makepkg if no AUR helper is installed)
+
+# --- Tablet driver (required -- see docs/opentabletdriver restore notes) ---
+opentabletdriver
+huiontablet
+
+# --- Apps ---
+zotero
+zotero-debug
+projectlibre
+stirling-pdf-desktop
+ngrok
+universal-android-debloater-git
+google-antigravity-bin
+
+# --- Desktop bits ---
+eww
+focusd
+focusd-debug
+ZenNotes
